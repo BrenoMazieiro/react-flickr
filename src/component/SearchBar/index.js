@@ -16,7 +16,7 @@ export default function SearchBar({ setSearch, setPage, page }) {
         type="search"
         onChange={(e) => {
           setPage(0)
-          setSearch(e.target.value || 'dog')
+          setSearch(escape(e.target.value) || 'dog')
         }} 
         className="search-box"
       />
