@@ -1,0 +1,21 @@
+#FootList {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#loadmore {
+  margin-top: 200px;
+  width: 150px;
+  line-height: 40px;
+  border-radius: 2px;
+  margin: 0 auto;
+  display: block;
+  background: #242628;
+  color: #00FEDE;
+  cursor: pointer;
+  text-align: center;
+}
