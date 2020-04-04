@@ -2,12 +2,25 @@ import React from 'react';
 import './style.scss';
 
 
-export default function CardPicture({ title, img, author }) {
+export default function CardPicture({ title, img, author, postedDate, setActualPicture }) {
   return (
     <div className="card-pictures">
       {img && (
         <div className="img">
-          <a href="#show" className="read-more" onClick={() => alert('brenot')}>Info</a>
+          <a
+            href="#show"
+            className="read-more"
+            onClick={() => {
+              setActualPicture({
+                title,
+                img,
+                author,
+                postedDate
+              })
+            }}
+          >
+            Info
+          </a>
           <div className="img-container" style={{ backgroundImage: `url(${img})` }}></div>
         </div>
       )}

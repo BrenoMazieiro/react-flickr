@@ -29,6 +29,7 @@ const App = () => {
     } else {
       setPictures([]);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search, debouncedSearchTerm, page, perPage])
 
   return (
