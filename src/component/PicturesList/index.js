@@ -14,6 +14,7 @@ export default function FotoList({ pictures, setPage, page }) {
           pictures.map((pic) => {
             return < CardPicture
               key={pic.id}
+              id={pic.id}
               title={pic.title}
               img={'https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '.jpg'}
               author={pic.ownername}

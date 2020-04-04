@@ -34,6 +34,7 @@ const App = () => {
 
   return (
     <div id="app">
+      <img crossOrigin="anonymous" id="domImage" src={null} alt="domImage" style={{display: "none"}}></img>
       <main>
         <SearchBar setSearch={setSearch} setPage={setPage} page={page} />
         <PicturesList pictures={pictures} setPage={setPage} page={page}/>

@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 
 
-export default function CardPicture({ title, img, author, postedDate, setActualPicture }) {
+export default function CardPicture({ id, title, img, author, postedDate, setActualPicture }) {
   return (
     <div className="card-pictures">
       {img && (
@@ -12,6 +12,7 @@ export default function CardPicture({ title, img, author, postedDate, setActualP
             className="read-more"
             onClick={() => {
               setActualPicture({
+                id,
                 title,
                 img,
                 author,
